@@ -23,8 +23,8 @@ docker run \
 -d \
 -p 9001:9001 \
 -e ADMIN_PASSWORD=password \
--e ADMIN_USERS={ admin1: admin1pw, admin2: admin2pw } \
--e USERS={ user1: user1pw, user2: user2pw } \
+-e ADMIN_USERS="{ 'admin1': 'admin1pw', 'admin2': 'admin2pw' }" \
+-e USERS="{ 'user1': 'user1pw', 'user2': 'user2pw' }" \
 inclusivedesign/etherpad
 ```
 
