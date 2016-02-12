@@ -1,2 +1,17 @@
-nodejs_app_name: universal
-nodejs_app_install_dir: /opt/gpii/node_modules/{{ nodejs_app_name }}
+---
+
+etherpad_admin_password: 
+etherpad_admin_users: 
+etherpad_users: 
+
+# self-test configuration for CONTAINER_TEST mode
+nodejs_app_name: etherpad
+nodejs_app_host_address: 127.0.0.1
+nodejs_app_tcp_port: 9001
+nodejs_app_test_http_endpoint: /
+nodejs_app_test_http_status_code: 200
+nodejs_app_test_string: "<button type=\"submit\">OK</button>"
+
+# install directory for universal from parent container
+nodejs_app_install_dir: /opt/{{ nodejs_app_name }}
+

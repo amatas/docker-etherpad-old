@@ -1,4 +1,5 @@
 ---
+
 - hosts: local
   connection: local
   vars_files:
@@ -6,3 +7,5 @@
   roles:
     - facts
     - nodejs
+    - etherpad
+
