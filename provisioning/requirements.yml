@@ -2,5 +2,5 @@
 #   name: facts
 # - src: https://github.com/idi-ops/ansible-nodejs
 #   name: nodejs
-- src: https://github.com/amatas/ansible-etherpad
+- src: https://github.com/idi-ops/ansible-etherpad
   name: etherpad
